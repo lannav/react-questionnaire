@@ -1,0 +1,23 @@
+@headerHeight: 80px;
+@footerHeight: 100px;
+
+.page-wrapper {
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+
+  &__header {
+    height: @headerHeight;
+    background: var(--header-background);
+  }
+
+  &__content {
+    display: flex;
+    flex: 1;
+  }
+
+  &__footer {
+    height: @footerHeight;
+    background: var(--footer-background);
+  }
+}
